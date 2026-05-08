@@ -1,0 +1,8 @@
+Section name: {section_name}
+
+Section text (page anchors are preserved as "## Page N" headings where the parser produced them — use them when you fill page_reference):
+"""
+{section_text}
+"""
+
+Return a JSON object that matches the schema described in the system prompt exactly. Every fact and risk must carry a verbatim exact_quote and the universal extraction fields.

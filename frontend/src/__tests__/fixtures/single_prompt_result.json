@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "document_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "question": "What is the senior leverage ratio?",
+      "answer": "The senior leverage ratio at year-end 2025 was 4.2x EBITDA, supported by Section 3.1 of the memo.",
+      "answer_html": "<p>The senior leverage ratio at year-end 2025 was 4.2x EBITDA, supported by Section 3.1 of the memo.</p>",
+      "evidence": [
+        {
+          "quote": "The senior leverage ratio stood at 4.2x at YE 2025.",
+          "page_reference": 4,
+          "chunk_id": "aaaaaaaa::3",
+          "relevance": "Direct statement of the ratio with a year-end timestamp."
+        }
+      ],
+      "is_directly_answered": true,
+      "inference_chain": null,
+      "unanswered_aspects": [],
+      "extraction_confidence": "high",
+      "confidence_rationale": "Single direct statement with no contradicting evidence."
+    },
+    {
+      "document_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "question": "What is the senior leverage ratio?",
+      "answer": "",
+      "answer_html": "",
+      "evidence": [],
+      "is_directly_answered": false,
+      "inference_chain": null,
+      "unanswered_aspects": ["The memo does not state a senior leverage ratio."],
+      "extraction_confidence": null,
+      "confidence_rationale": null
+    },
+    {
+      "document_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "question": "What is the senior leverage ratio?",
+      "answer": "Inferred 3.8x from EBITDA and senior debt totals.",
+      "answer_html": "<p>Inferred 3.8x from EBITDA and senior debt totals.</p>",
+      "evidence": [
+        {
+          "quote": "Senior debt of $760M against EBITDA of $200M.",
+          "page_reference": 7,
+          "chunk_id": "cccccccc::5",
+          "relevance": "Underlying inputs to compute the ratio."
+        }
+      ],
+      "is_directly_answered": false,
+      "inference_chain": "Computed from senior debt ($760M) divided by EBITDA ($200M).",
+      "unanswered_aspects": [],
+      "extraction_confidence": "medium",
+      "confidence_rationale": "Inputs are stated; the ratio itself is not."
+    },
+    {
+      "document_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "question": "Are there any covenant exceptions?",
+      "answer": "No covenant exceptions are disclosed in this memo.",
+      "answer_html": "<p>No covenant exceptions are disclosed in this memo.</p>",
+      "evidence": [],
+      "is_directly_answered": true,
+      "inference_chain": null,
+      "unanswered_aspects": [],
+      "extraction_confidence": "medium",
+      "confidence_rationale": "Memo's covenant section explicitly states no exceptions."
+    },
+    {
+      "document_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "question": "Are there any covenant exceptions?",
+      "answer": "",
+      "answer_html": "",
+      "evidence": [],
+      "is_directly_answered": null,
+      "inference_chain": null,
+      "unanswered_aspects": [],
+      "extraction_confidence": null,
+      "confidence_rationale": null,
+      "_validation_error": {
+        "attempted_schema": "MemoQaResponse",
+        "raw_response": "{ malformed json",
+        "validation_errors": [{ "loc": ["evidence"], "msg": "field required" }]
+      }
+    },
+    {
+      "document_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "question": "Are there any covenant exceptions?",
+      "answer": "Section 5.2 lists three exceptions tied to acquisitions in 2024.",
+      "answer_html": "<p>Section 5.2 lists three exceptions tied to acquisitions in 2024.</p>",
+      "evidence": [
+        {
+          "quote": "Three covenant exceptions were granted in connection with the 2024 acquisitions of Smaller Co. A through C.",
+          "page_reference": 11,
+          "chunk_id": "cccccccc::8",
+          "relevance": "Explicit list of exception count and reason."
+        }
+      ],
+      "is_directly_answered": true,
+      "inference_chain": null,
+      "unanswered_aspects": [],
+      "extraction_confidence": "high",
+      "confidence_rationale": "Direct enumeration of exceptions."
+    }
+  ]
+}

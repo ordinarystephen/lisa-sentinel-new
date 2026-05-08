@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "document_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "filename": "riverbend-2026q1.pdf",
+      "risk_level": "High",
+      "confidence": "high",
+      "confidence_rationale": "Direct exposure to industrial demand stated multiple times in the memo.",
+      "summary_rationale": "Riverbend's revenue is concentrated in cyclical industrial verticals; a 200 bps rate shock would compress margins below covenant thresholds.",
+      "evidence_quotes": [
+        {
+          "quote": "85% of Riverbend's customers are in cyclical industrial sectors.",
+          "page_reference": 3,
+          "chunk_id": "aaaaaaaa::1",
+          "relevance": "Establishes concentration risk to industrial demand.",
+          "direction": "supports_exposure"
+        },
+        {
+          "quote": "Floating-rate debt represents 70% of total liabilities.",
+          "page_reference": 6,
+          "chunk_id": "aaaaaaaa::5",
+          "relevance": "Shows direct rate-shock sensitivity.",
+          "direction": "supports_exposure"
+        }
+      ],
+      "inference_chain": "Industrial concentration plus floating-rate debt yields compounding stress under SOFR +200 bps.",
+      "unaddressed_dimensions": ["Hedging position", "Counterparty mitigants"],
+      "recommended_followup": "Confirm interest-rate hedging coverage and review covenant headroom under stress."
+    },
+    {
+      "document_hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "filename": "cascadia-2026q1.pdf",
+      "risk_level": "Medium",
+      "confidence": "medium",
+      "confidence_rationale": "Mixed indicators; some hedging in place.",
+      "summary_rationale": "Cascadia carries moderate floating-rate exposure but maintains a 60% hedge book that mutes the impact.",
+      "evidence_quotes": [
+        {
+          "quote": "60% of floating-rate debt is hedged via interest-rate swaps maturing in 2027.",
+          "page_reference": 8,
+          "chunk_id": "bbbbbbbb::4",
+          "relevance": "Explicitly limits rate-shock impact.",
+          "direction": "refutes_exposure"
+        },
+        {
+          "quote": "Industrial customer mix is 45% of revenue.",
+          "page_reference": 4,
+          "chunk_id": "bbbbbbbb::2",
+          "relevance": "Material but not concentrated.",
+          "direction": "contextual"
+        }
+      ],
+      "inference_chain": "Hedging coverage offsets a meaningful portion of the rate sensitivity.",
+      "unaddressed_dimensions": ["Hedge counterparty quality"],
+      "recommended_followup": "Stress-test hedge counterparty creditworthiness."
+    },
+    {
+      "document_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "filename": "northwind-2026q1.pdf",
+      "risk_level": "Low",
+      "confidence": "high",
+      "confidence_rationale": "Memo explicitly addresses the scenario with quantitative answers.",
+      "summary_rationale": "Northwind's services-heavy mix and fixed-rate funding make a 200 bps shock immaterial to profitability.",
+      "evidence_quotes": [
+        {
+          "quote": "97% of debt is fixed-rate with weighted-average maturity of 6.4 years.",
+          "page_reference": 9,
+          "chunk_id": "cccccccc::6",
+          "relevance": "Eliminates direct rate sensitivity.",
+          "direction": "refutes_exposure"
+        }
+      ],
+      "inference_chain": "Fixed-rate funding insulates Northwind from short-term rate volatility.",
+      "unaddressed_dimensions": [],
+      "recommended_followup": null
+    },
+    {
+      "document_hash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "filename": "summit-2026q1.pdf",
+      "risk_level": "Insufficient Evidence",
+      "confidence": null,
+      "confidence_rationale": null,
+      "summary_rationale": "Memo does not disclose interest-rate composition or industrial exposure detail; cannot evaluate.",
+      "evidence_quotes": [],
+      "inference_chain": null,
+      "unaddressed_dimensions": ["Funding mix", "Customer concentration", "Hedging"],
+      "recommended_followup": "Request supplemental disclosure on funding mix and rate exposure."
+    }
+  ]
+}

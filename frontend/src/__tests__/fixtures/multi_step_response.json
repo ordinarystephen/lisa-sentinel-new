@@ -1,0 +1,45 @@
+{
+  "response": {
+    "answer": "The most material covenant risk across the three memos is the consolidated leverage covenant: Riverbend at 4.2x is approaching its 4.5x limit, while Northwind has already negotiated three exceptions tied to its 2024 acquisitions.",
+    "answer_html": "<p>The most material covenant risk across the three memos is the consolidated leverage covenant: <strong>Riverbend</strong> at 4.2x is approaching its 4.5x limit, while <strong>Northwind</strong> has already negotiated three exceptions tied to its 2024 acquisitions.</p>",
+    "evidence": [
+      {
+        "quote": "The senior leverage ratio stood at 4.2x at YE 2025.",
+        "page_reference": 4,
+        "chunk_id": "aaaaaaaa::3",
+        "relevance": "Establishes Riverbend's current leverage relative to its covenant ceiling."
+      },
+      {
+        "quote": "Three covenant exceptions were granted in connection with the 2024 acquisitions of Smaller Co. A through C.",
+        "page_reference": 11,
+        "chunk_id": "cccccccc::8",
+        "relevance": "Direct evidence of Northwind's exception history."
+      }
+    ],
+    "retrieved_chunks": [
+      {
+        "id": "aaaaaaaa::3",
+        "text": "The senior leverage ratio stood at 4.2x at YE 2025, with the consolidated leverage covenant set at 4.5x.",
+        "metadata": {
+          "doc_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "index": 3,
+          "parser_mode": "docintel-official"
+        }
+      },
+      {
+        "id": "cccccccc::8",
+        "text": "Three covenant exceptions were granted in connection with the 2024 acquisitions of Smaller Co. A through C.",
+        "metadata": {
+          "doc_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "index": 8,
+          "parser_mode": "docintel-official"
+        }
+      }
+    ],
+    "is_directly_answered": false,
+    "inference_chain": "Combined the directly-stated leverage ratios from Riverbend and the exception history from Northwind to identify the cross-memo concentration of covenant risk.",
+    "unanswered_aspects": ["Cascadia memo did not address covenants explicitly."],
+    "extraction_confidence": "medium",
+    "confidence_rationale": "Strong evidence in two memos; one memo had no covenant disclosure."
+  }
+}

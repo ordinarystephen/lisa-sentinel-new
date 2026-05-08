@@ -1,0 +1,41 @@
+# Tooling configuration only. This project is not a distributable package.
+# Python 3.11+ is required at runtime — Pydantic v2 evaluates field
+# annotations eagerly and the schemas use PEP 604 / PEP 585 syntax.
+
+[project]
+name = "lisa-sentinel"
+version = "0.1.0"
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["logging", "app/static/vendor"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "W",   # pycodestyle warnings
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line length is handled by black
+    "B008",  # function calls in argument defaults are fine for Flask routes
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B011"]
+"app/services/llm.py" = ["F401"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"

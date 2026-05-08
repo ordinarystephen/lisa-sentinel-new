@@ -1,0 +1,22 @@
+{
+  "modes": ["section_extraction", "memo_qa", "scenario_screening"],
+  "prompts": {
+    "section_extraction": {
+      "system": "You are an extraction agent. Read the supplied section text and return a structured envelope per the schema.",
+      "user": "Section: {section_name}\n\nText:\n{section_text}\n\nReturn JSON conforming to SectionExtractionResponse."
+    },
+    "memo_qa": {
+      "system": "You are a memo-QA agent. Answer the analyst's question using only the supplied context. Return JSON per MemoQaResponse.",
+      "user": "Document hash: {doc_hash}\nFilename: \n\n--- CONTEXT ---\n{context}\n--- END CONTEXT ---\n\nQuestion: {question}\n"
+    },
+    "scenario_screening": {
+      "system": "You are a scenario-screening agent. Evaluate the document against the scenario and return JSON per ScenarioScreeningResponse.",
+      "user": null
+    }
+  },
+  "overrides_active": {
+    "section_extraction": false,
+    "memo_qa": false,
+    "scenario_screening": false
+  }
+}

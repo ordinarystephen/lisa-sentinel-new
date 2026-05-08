@@ -1,0 +1,24 @@
+/* Apple-clean design tokens. Replaces the JPMorgan/Goldman palette of
+   earlier phases. Use sparingly — color is for status, not decoration. */
+
+:root {
+  --color-bg: #ffffff;
+  --color-bg-subtle: #fafafa;
+  --color-bg-muted: #f4f4f5;
+  --color-bg-hover: #f4f4f5;
+  --color-ink: #18181b;
+  --color-ink-muted: #52525b;
+  --color-ink-subtle: #a1a1aa;
+  --color-accent: #18181b;
+  --color-accent-hover: #27272a;
+  --color-rule: #e4e4e7;
+  --color-rule-strong: #d4d4d8;
+  --color-success: #15803d;
+  --color-warn: #a16207;
+  --color-error: #991b1b;
+  --color-focus-ring: #18181b;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", monospace;
+}
